@@ -6,9 +6,14 @@ extension ListExtension<T> on List<T> {
       print(item);
     }
   }
+
+  /// Find the intersection of two lists in place
+  /// Example: [1, 2, 3] ∩ [2, 3] -> [2, 3]
+  void intersect(List<T> b) => removeWhere((item) => !b.contains(item));
 }
 
 extension ListExtensionString<T> on List<String> {
-  /// Sort the list of Strings alphabetically
+  /// Sort a list of Strings alphabetically
+  /// Example: ["z", "y", "x"] -> ["x", "y", "z"]
   void alphabetical() => sort((a, b) => a.compareTo(b));
 }
