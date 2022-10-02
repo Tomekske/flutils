@@ -1,10 +1,17 @@
 extension ListExtension<T> on List<T> {
   /// Print all items of the list
-  void printList() {
-    for (final item in this) {
+  /// When [isIndex] is true -> prints out the indexes and value "1. value"
+  /// When [isIndex] is false -> prints out the value only "value"
+  void printList({bool isIndex = true}) {
+    for (int i = 0; i < length; i++) {
+      final item = isIndex ? "$i. ${this[i]}" : this[i];
+
       // ignore: avoid_print
       print(item);
     }
+
+    // ignore: avoid_print
+    print("List length: $length");
   }
 
   /// Find the intersection of two lists in place

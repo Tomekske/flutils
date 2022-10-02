@@ -1,3 +1,7 @@
+## 0.0.10
+* Added: set a value within the input box
+* Improvement: print out indexes when using the printList extension
+
 ## 0.0.9
 * Fixed: close the bottom sheet once the user entered the text within the inputBottomSheet
 
@@ -29,5 +33,5 @@
 * Added: an inputBox widget
 
 ## 0.0.1
-* Sort lists of strings by using extensions
-* Convenience method to print out list items using extensions
+* Added: sort lists of strings by using extensions
+* Added: convenience method to print out list items using extensions

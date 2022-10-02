@@ -13,6 +13,9 @@ class InputBottomSheet {
   /// Property contains the input box's [hint] text
   String hint;
 
+  /// Set a [value] within the input box
+  String? setValue;
+
   /// The [onClose] callback returns the text that has been entered within the input box
   Function(String? text) onClose;
 
@@ -21,11 +24,17 @@ class InputBottomSheet {
     required this.title,
     required this.hint,
     required this.onClose,
+    this.setValue,
   });
 
   /// Display the bottom sheet
   void showBottomSheet() {
     final TextEditingController textController = TextEditingController();
+
+    if (setValue != null) {
+      textController.text = setValue!;
+    }
+
     bool isBottomSheepOnTappedOut = true;
     String? text;
 
