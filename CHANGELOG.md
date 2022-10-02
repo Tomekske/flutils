@@ -1,3 +1,7 @@
+## 0.0.8
+* Improvement: close the bottom sheet once the user entered the text within the inputBottomSheet
+* Improvement: autofocus the inputBox within the inputBottomSheet
+
 ## 0.0.7
 * Fixed: inputBottomSheet had a faulty class name due copy pasting...
 

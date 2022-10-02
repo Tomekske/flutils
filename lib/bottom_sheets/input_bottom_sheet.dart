@@ -64,8 +64,12 @@ class InputBottomSheet {
                       hint: hint,
                       controller: textController,
                       inputPicker: InputPicker.clear,
+                      autoFocus: true,
                       onSubmit: (String submittedText) {
                         text = submittedText;
+
+                        // Close the bottom sheet once the user entered the text
+                        onClose(text);
                       },
                     ),
                   ],
