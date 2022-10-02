@@ -26,8 +26,8 @@ class InputBox extends StatefulWidget {
   /// [autoFocus] determines wether an input box is auto focused
   bool? autoFocus;
 
-  /// The [onSubmitted] callback returns the text of given text input
-  Function(String text)? onSubmitted;
+  /// The [onSubmit] callback returns the text of given text input
+  Function(String text)? onSubmit;
 
   /// Input widget with a clear button
   InputBox({
@@ -38,7 +38,7 @@ class InputBox extends StatefulWidget {
     this.keyboardType,
     this.textInputAction,
     this.autoFocus,
-    this.onSubmitted,
+    this.onSubmit,
   }) : super();
 
   @override
@@ -73,7 +73,7 @@ class _InputBoxState extends State<InputBox> {
           keyboardType: widget.keyboardType ?? TextInputType.text,
           maxLines: null,
           textInputAction: widget.textInputAction ?? TextInputAction.done,
-          onFieldSubmitted: widget.onSubmitted,
+          onFieldSubmitted: widget.onSubmit,
         ),
       ),
     );

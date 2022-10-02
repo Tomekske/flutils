@@ -1,3 +1,7 @@
+## 0.0.6
+* Renamed: onSubmitted into onSubmit callback for the inputBox widget
+* Added: inputBottomSheet which contains only one inputBox
+
 ## 0.0.5
 * Fixed missing onSubmitted for the inputBox widget
 
