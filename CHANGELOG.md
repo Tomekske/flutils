@@ -1,3 +1,6 @@
+## 0.0.5
+* Fixed missing onSubmitted for the inputBox widget
+
 ## 0.0.4
 * Added keyboardType parameter for the inputBox widget
 * Added textInputAction parameter for the inputBox widget

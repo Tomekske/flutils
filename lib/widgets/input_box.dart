@@ -38,6 +38,7 @@ class InputBox extends StatefulWidget {
     this.keyboardType,
     this.textInputAction,
     this.autoFocus,
+    this.onSubmitted,
   }) : super();
 
   @override
