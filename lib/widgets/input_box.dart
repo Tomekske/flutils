@@ -15,9 +15,19 @@ class InputBox extends StatefulWidget {
   /// Property to set the input mode
   final InputPicker inputPicker;
 
+  /// Property sets the [keyboardType] such as: text, phone, multiline, passwords, ...
+  /// Note that the input box behaves accordingly chosen [keyboardType]
+  TextInputType? keyboardType;
+
+  /// Property sets the [textInputAction] button of the soft keyboard such as: done, go, search, ...
+  /// Note that the visual representation doesn't cause any specific behavior
+  TextInputAction? textInputAction;
+
   /// [autoFocus] determines wether an input box is auto focused
   bool? autoFocus;
-  final TextInputType keyboardType;
+
+  /// The [onSubmitted] callback returns the text of given text input
+  Function(String text)? onSubmitted;
 
   /// Input widget with a clear button
   InputBox({
@@ -25,7 +35,8 @@ class InputBox extends StatefulWidget {
     required this.hint,
     required this.controller,
     required this.inputPicker,
-    required this.keyboardType,
+    this.keyboardType,
+    this.textInputAction,
     this.autoFocus,
   }) : super();
 
@@ -58,9 +69,10 @@ class _InputBoxState extends State<InputBox> {
             labelText: widget.hint,
             suffixIcon: setInputSuffix(widget.inputPicker),
           ),
-          keyboardType: widget.keyboardType,
+          keyboardType: widget.keyboardType ?? TextInputType.text,
           maxLines: null,
-          textInputAction: TextInputAction.done,
+          textInputAction: widget.textInputAction ?? TextInputAction.done,
+          onFieldSubmitted: widget.onSubmitted,
         ),
       ),
     );
