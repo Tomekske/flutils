@@ -69,6 +69,9 @@ class InputBottomSheet {
                         text = submittedText;
 
                         // Close the bottom sheet once the user entered the text
+                        Navigator.pop(context);
+                        isBottomSheepOnTappedOut = false;
+
                         onClose(text);
                       },
                     ),
