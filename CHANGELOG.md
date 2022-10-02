@@ -1,3 +1,6 @@
+## 0.0.7
+* Fixed: inputBottomSheet had a faulty class name due copy pasting...
+
 ## 0.0.6
 * Renamed: onSubmitted into onSubmit callback for the inputBox widget
 * Added: inputBottomSheet which contains only one inputBox

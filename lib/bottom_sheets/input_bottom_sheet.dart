@@ -3,7 +3,7 @@ import 'package:utils/enums/input_picker.dart';
 import 'package:utils/widgets/widgets.dart';
 
 /// This class shows the bottom sheet content for sharing a recipe
-class SelectTagsBottomSheet {
+class InputBottomSheet {
   /// Property contains the build [context]
   BuildContext context;
 
@@ -16,7 +16,7 @@ class SelectTagsBottomSheet {
   /// The [onClose] callback returns the text that has been entered within the input box
   Function(String? text) onClose;
 
-  SelectTagsBottomSheet(
+  InputBottomSheet(
     this.context, {
     required this.title,
     required this.hint,
