@@ -72,7 +72,7 @@ class _InputBoxState extends State<InputBox> {
           ),
           keyboardType: widget.keyboardType ?? TextInputType.text,
           maxLines: null,
-          textInputAction: widget.textInputAction ?? TextInputAction.done,
+          textInputAction: widget.textInputAction ?? TextInputAction.go,
           onFieldSubmitted: widget.onSubmit,
         ),
       ),

@@ -1,3 +1,9 @@
+## 0.0.11
+* Fixed: changed default value for TextInputAction to go within for the inputBox widget
+* Added: toast with a success and failure message
+* Added: text theme
+* Added: material app theme
+
 ## 0.0.10
 * Added: set a value within the input box
 * Improvement: print out indexes when using the printList extension
