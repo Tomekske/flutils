@@ -1,3 +1,9 @@
+## 0.0.12
+* Added: a isBlank and isNotBlank extension on strings
+* Added: a confirmation dialog
+* Added: a center extension on widgets
+* Added: a message widget, which displays a widget and message centered on a page
+
 ## 0.0.11
 * Fixed: changed default value for TextInputAction to go within for the inputBox widget
 * Added: toast with a success and failure message
