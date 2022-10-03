@@ -1,3 +1,6 @@
+## 0.0.13
+* Fixed: widget parameter isn't required anymore for the message widget
+
 ## 0.0.12
 * Added: a isBlank and isNotBlank extension on strings
 * Added: a confirmation dialog

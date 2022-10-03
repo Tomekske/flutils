@@ -4,16 +4,16 @@ import 'package:utils/theme/app_theme.dart' as AppTheme;
 
 /// Displays a widget and message centered on a page
 class Message extends StatelessWidget {
-  /// Property contains a [widget] which is displayed in the center of the screen
-  final Widget? widget;
-
   /// Property contains a [message] which is displayed in the center of the screen
   final String message;
+
+  /// Property contains a [widget] which is displayed in the center of the screen
+  final Widget? widget;
 
   /// Property allows the user to pass a text [style] other than the default one
   TextStyle? style;
 
-  Message({required this.widget, required this.message, this.style}) : super();
+  Message({required this.message, this.widget, this.style}) : super();
 
   @override
   Widget build(BuildContext context) {
