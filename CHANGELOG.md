@@ -1,3 +1,6 @@
+## 0.0.15
+* Added: a isBlank and isNotBlank extensions on Lists
+
 ## 0.0.14
 * Fixed: capitalize string extension doesn't throw an exception of empty strings anymore 
 
