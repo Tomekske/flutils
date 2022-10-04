@@ -4,6 +4,10 @@ extension StringExtension on String {
   /// "test this beautiful text" -> "Test this beautiful text"
   /// "Test This Beautiful Text" -> "Test this beautiful text"
   String capitalize() {
+    if (isBlank()) {
+      return "";
+    }
+
     return "${this[0].toUpperCase()}${substring(1).toLowerCase()}";
   }
 

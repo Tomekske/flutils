@@ -46,4 +46,22 @@ void main() {
 
     expect(actual, expected);
   });
+
+  test("White spaces", () {
+    const String text = "  ";
+
+    const String expected = "";
+    final String actual = text.capitalize();
+
+    expect(actual, expected);
+  });
+
+  test("Empty string", () {
+    const String text = "";
+
+    const String expected = "";
+    final String actual = text.capitalize();
+
+    expect(actual, expected);
+  });
 }

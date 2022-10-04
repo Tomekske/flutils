@@ -1,6 +1,6 @@
 name: utils
 description: This package contains utilities which are commonly used in my private projects
-version: 0.0.13
+version: 0.0.14
 homepage:
 
 environment:

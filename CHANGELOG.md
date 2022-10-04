@@ -1,3 +1,6 @@
+## 0.0.14
+* Fixed: capitalize string extension doesn't throw an exception of empty strings anymore 
+
 ## 0.0.13
 * Fixed: widget parameter isn't required anymore for the message widget
 
