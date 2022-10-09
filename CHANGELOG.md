@@ -1,3 +1,6 @@
+## 0.0.16
+* Added: a removeBlankItems extensions on Lists of strings
+
 ## 0.0.15
 * Added: a isBlank and isNotBlank extensions on Lists
 

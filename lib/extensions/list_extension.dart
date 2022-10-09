@@ -1,3 +1,5 @@
+import 'package:utils/extensions/extensions.dart';
+
 extension ListExtension<T> on List<T> {
   /// Print all items of the list
   /// When [isIndex] is true -> prints out the indexes and value "1. value"
@@ -61,4 +63,18 @@ extension ListExtensionString<T> on List<String> {
   /// [""] -> false
   /// [] -> false
   bool isNotBlank() => !isBlank();
+
+  /// Removes blank items from a list of strings
+  /// Examples:
+  /// [] => []
+  /// [""] => []
+  /// ["", "", ""] => []
+  /// [" "] => []
+  /// [" ", " ", " "] => []
+  /// ["a", "b"] => ["a", "b"]
+  /// ["a", "", "b"] => ["a", "b"]
+  /// ["a", "", "", "", "b"] => ["a", "b"]
+  /// ["a", " ", "b"] => ["a", "b"]
+  /// ["a", " ", " ", " ", "b"] => ["a", "b"]
+  void removeBlankItems() => removeWhere((String item) => item.isBlank());
 }
