@@ -1,4 +1,9 @@
 extension StringExtension on String {
+  /// Elegant way to returns an empty string
+  /// Examples:
+  /// StringExtension.empty() -> ''
+  static String empty() => '';
+
   /// Capitalize the first letter of a word within a string
   /// Examples:
   /// "test this beautiful text" -> "Test this beautiful text"

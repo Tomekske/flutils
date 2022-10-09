@@ -1,8 +1,11 @@
+## 0.0.17
+* Added: static empty extension which returns an empty string
+
 ## 0.0.16
-* Added: a removeBlankItems extensions on Lists of strings
+* Added: a removeBlankItems extensions on lists of strings
 
 ## 0.0.15
-* Added: a isBlank and isNotBlank extensions on Lists
+* Added: a isBlank and isNotBlank extensions on lists
 
 ## 0.0.14
 * Fixed: capitalize string extension doesn't throw an exception of empty strings anymore 
