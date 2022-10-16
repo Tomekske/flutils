@@ -1,5 +1,5 @@
 import 'package:test/test.dart';
-import 'package:utils/extensions/extensions.dart';
+import 'package:utils/extensions.dart';
 
 void main() {
   test("alphabetical: lower case", () {

@@ -32,3 +32,29 @@ extension StringExtension on String {
   /// "   " -> false
   bool isNotBlank() => !isBlank();
 }
+
+extension StringNullableExtension on String? {
+  /// Checks wether a string is null or does not contains characters
+  /// Examples:
+  /// null -> true
+  /// "This is a string" -> false
+  /// " This is a string " -> false
+  /// "" -> true
+  /// "   " -> true
+  bool isBlank() {
+    if (this == null) {
+      return true;
+    }
+
+    return this!.trim().isEmpty;
+  }
+
+  /// Checks wether a string is not null or contains characters
+  /// Examples:
+  /// null -> false
+  /// "This is a string" -> true
+  /// " This is a string " -> true
+  /// "" -> false
+  /// "   " -> false
+  bool isNotBlank() => !isBlank();
+}

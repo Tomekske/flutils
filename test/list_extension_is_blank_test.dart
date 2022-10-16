@@ -1,132 +1,89 @@
+// ignore_for_file: unnecessary_cast
+
 import 'package:test/test.dart';
-import 'package:utils/extensions/extensions.dart';
+import 'package:utils/extensions.dart';
 
 void main() {
-  test("isBlank: empty list of integers", () {
-    final List<int> list = [];
+  test("isBlank: true", () {
     const bool expected = true;
 
-    final bool actual = list.isBlank();
-    expect(expected, actual);
+    expect(<int>[].isBlank(), expected);
+    expect(<String>["   "].isBlank(), expected);
+    expect(<String>["  ", "  ", "  "].isBlank(), expected);
+    expect(<String>[""].isBlank(), expected);
+    expect(<String>["", "", ""].isBlank(), expected);
+    expect(<String>[].isBlank(), expected);
   });
 
-  test("isBlank: contains one integer item", () {
-    final List<int> list = [0];
+  test("isBlank: false", () {
     const bool expected = false;
 
-    final bool actual = list.isBlank();
-    expect(expected, actual);
+    expect(<int>[0].isBlank(), expected);
+    expect(<int>[0, 1, 2, 3].isBlank(), expected);
+    expect(<String>["a"].isBlank(), expected);
+    expect(<String>["a", "b", "c"].isBlank(), expected);
   });
 
-  test("isBlank: contains multiple integer items", () {
-    final List<int> list = [0, 1, 2, 3];
+  test("isNotBlank: false", () {
     const bool expected = false;
 
-    final bool actual = list.isBlank();
-    expect(expected, actual);
+    expect(<int>[].isNotBlank(), expected);
+    expect(<String>["   "].isNotBlank(), expected);
+    expect(<String>["  ", "  ", "  "].isNotBlank(), expected);
+    expect(<String>[""].isNotBlank(), expected);
+    expect(<String>["", "", ""].isNotBlank(), expected);
+    expect(<String>[].isNotBlank(), expected);
   });
 
-  test("isBlank: empty list of strings", () {
-    final List<String> list = [];
+  test("isNotBlank: true", () {
     const bool expected = true;
 
-    final bool actual = list.isBlank();
-    expect(expected, actual);
+    expect(<int>[0].isNotBlank(), expected);
+    expect(<int>[0, 1, 2, 3].isNotBlank(), expected);
+    expect(<String>["a"].isNotBlank(), expected);
+    expect(<String>["a", "b", "c"].isNotBlank(), expected);
   });
 
-  test("isBlank: one item with spaces", () {
-    final List<String> list = ["   "];
+  test("isBlank nullable: true", () {
     const bool expected = true;
 
-    final bool actual = list.isBlank();
-    expect(expected, actual);
+    expect((null as List<int>?).isBlank(), expected);
+    expect((<int>[] as List<int>?).isBlank(), expected);
+    expect((<String>["   "] as List<String>?).isBlank(), expected);
+    expect((<String>["  ", "  ", "  "] as List<String>?).isBlank(), expected);
+    expect((<String>[""] as List<String>?).isBlank(), expected);
+    expect((<String>["", "", ""] as List<String>?).isBlank(), expected);
+    expect((<String>[] as List<String>?).isBlank(), expected);
   });
 
-  test("isBlank: multiple items with spaces", () {
-    final List<String> list = ["   ", "   ", "   "];
+  test("isBlank nullable: false", () {
+    const bool expected = false;
+
+    expect((<int>[0] as List<int>?).isBlank(), expected);
+    expect((<int>[0, 1, 2, 3] as List<int>?).isBlank(), expected);
+    expect((<String>["a"] as List<String>?).isBlank(), expected);
+    expect((<String>["a", "b", "c"] as List<String>?).isBlank(), expected);
+  });
+
+  test("isNotBlank nullable: false", () {
+    const bool expected = false;
+
+    expect((null as List<int>?).isNotBlank(), expected);
+    expect((<int>[] as List<int>?).isNotBlank(), expected);
+    expect((<String>["   "] as List<String>?).isNotBlank(), expected);
+    expect(
+        (<String>["  ", "  ", "  "] as List<String>?).isNotBlank(), expected);
+    expect((<String>[""] as List<String>?).isNotBlank(), expected);
+    expect((<String>["", "", ""] as List<String>?).isNotBlank(), expected);
+    expect((<String>[] as List<String>?).isNotBlank(), expected);
+  });
+
+  test("isNotBlank nullable: true", () {
     const bool expected = true;
 
-    final bool actual = list.isBlank();
-    expect(expected, actual);
-  });
-
-  test("isBlank:one item with an empty string", () {
-    final List<String> list = [""];
-    const bool expected = true;
-
-    final bool actual = list.isBlank();
-    expect(expected, actual);
-  });
-
-  test("isBlank: multiple items with empty strings", () {
-    final List<String> list = ["", ""];
-    const bool expected = true;
-
-    final bool actual = list.isBlank();
-    expect(expected, actual);
-  });
-
-  test("isNotBlank: empty list of integers", () {
-    final List<int> list = [];
-    const bool expected = false;
-
-    final bool actual = list.isNotBlank();
-    expect(expected, actual);
-  });
-
-  test("isNotBlank: contains one integer item", () {
-    final List<int> list = [0];
-    const bool expected = true;
-
-    final bool actual = list.isNotBlank();
-    expect(expected, actual);
-  });
-
-  test("isNotBlank: contains multiple integer items", () {
-    final List<int> list = [0, 1, 2, 3];
-    const bool expected = true;
-
-    final bool actual = list.isNotBlank();
-    expect(expected, actual);
-  });
-
-  test("isNotBlank: empty list of strings", () {
-    final List<String> list = [];
-    const bool expected = false;
-
-    final bool actual = list.isNotBlank();
-    expect(expected, actual);
-  });
-
-  test("isNotBlank: one item with spaces", () {
-    final List<String> list = ["   "];
-    const bool expected = false;
-
-    final bool actual = list.isNotBlank();
-    expect(expected, actual);
-  });
-
-  test("isNotBlank: multiple items with spaces", () {
-    final List<String> list = ["   ", "   ", "   "];
-    const bool expected = false;
-
-    final bool actual = list.isNotBlank();
-    expect(expected, actual);
-  });
-
-  test("isNotBlank:one item with an empty string", () {
-    final List<String> list = [""];
-    const bool expected = false;
-
-    final bool actual = list.isNotBlank();
-    expect(expected, actual);
-  });
-
-  test("isNotBlank: multiple items with empty strings", () {
-    final List<String> list = ["", ""];
-    const bool expected = false;
-
-    final bool actual = list.isNotBlank();
-    expect(expected, actual);
+    expect((<int>[0] as List<int>?).isNotBlank(), expected);
+    expect((<int>[0, 1, 2, 3] as List<int>?).isNotBlank(), expected);
+    expect((<String>["a"] as List<String>?).isNotBlank(), expected);
+    expect((<String>["a", "b", "c"] as List<String>?).isNotBlank(), expected);
   });
 }

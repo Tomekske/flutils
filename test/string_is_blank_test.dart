@@ -1,76 +1,80 @@
+// ignore_for_file: unnecessary_cast
+
 import 'package:test/test.dart';
 import 'package:utils/extensions/string_extension.dart';
 
 void main() {
-  test("isBlank: string contains text", () {
-    const String text = "this string is not empty";
-
+  test("isBlank: false", () {
     const bool expected = false;
-    final bool actual = text.isBlank();
 
-    expect(actual, expected);
+    expect("this string is not empty".isBlank(), expected);
+    expect("  this string is not blank  ".isBlank(), expected);
+    expect("this string is not empty    ".isBlank(), expected);
+    expect("    this string is not empty".isBlank(), expected);
   });
 
-  test("isBlank: string does not contain text", () {
-    const String text = "";
-
+  test("isBlank: true", () {
     const bool expected = true;
-    final bool actual = text.isBlank();
 
-    expect(actual, expected);
+    expect("".isBlank(), expected);
+    expect("     ".isBlank(), expected);
+    expect(''.isBlank(), expected);
+    expect('     '.isBlank(), expected);
   });
 
-  test("isBlank: string contains only white spaces", () {
-    const String text = "      ";
-
+  test("isNotBlank: true", () {
     const bool expected = true;
-    final bool actual = text.isBlank();
 
-    expect(actual, expected);
+    expect("this string is not empty".isNotBlank(), expected);
+    expect("  this string is not blank  ".isNotBlank(), expected);
+    expect("this string is not empty    ".isNotBlank(), expected);
+    expect("    this string is not empty".isNotBlank(), expected);
   });
 
-  test("isBlank: string contains text and white spaces", () {
-    const String text = "   this string is not blank   ";
-
+  test("isBlank: false", () {
     const bool expected = false;
-    final bool actual = text.isBlank();
 
-    expect(actual, expected);
+    expect("".isNotBlank(), expected);
+    expect("     ".isNotBlank(), expected);
+    expect(''.isNotBlank(), expected);
+    expect('     '.isNotBlank(), expected);
   });
 
-  test("isNotBlank: string contains text", () {
-    const String text = "this string is not empty";
-
+  test("isBlank nullable: true", () {
     const bool expected = true;
-    final bool actual = text.isNotBlank();
 
-    expect(actual, expected);
+    expect((null as String?).isBlank(), expected);
+    expect(("" as String?).isBlank(), expected);
+    expect(("     " as String?).isBlank(), expected);
+    expect(('' as String?).isBlank(), expected);
+    expect(('     ' as String?).isBlank(), expected);
   });
 
-  test("isNotBlank: string does not contain text", () {
-    const String text = "";
-
+  test("isBlank nullable: false", () {
     const bool expected = false;
-    final bool actual = text.isNotBlank();
 
-    expect(actual, expected);
+    expect(("this string is not empty" as String?).isBlank(), expected);
+    expect(("  this string is not blank  " as String?).isBlank(), expected);
+    expect(("this string is not empty    " as String?).isBlank(), expected);
+    expect(("    this string is not empty" as String?).isBlank(), expected);
   });
 
-  test("isNotBlank: string contains only white spaces", () {
-    const String text = "      ";
-
+  test("isNotBlank nullable: false", () {
     const bool expected = false;
-    final bool actual = text.isNotBlank();
 
-    expect(actual, expected);
+    expect((null as String?).isNotBlank(), expected);
+    expect(("" as String?).isNotBlank(), expected);
+    expect(("     " as String?).isNotBlank(), expected);
+    expect(('' as String?).isNotBlank(), expected);
+    expect(('     ' as String?).isNotBlank(), expected);
   });
 
-  test("isNotBlank: string contains text and white spaces", () {
-    const String text = "   this string is not blank   ";
-
+  test("isNotBlank nullable: true", () {
     const bool expected = true;
-    final bool actual = text.isNotBlank();
 
-    expect(actual, expected);
+    expect(("this string is not empty" as String?).isNotBlank(), expected);
+    expect(("  this string is not blank  " as String?).isNotBlank(), expected);
+    expect(("this string is not empty    " as String?).isNotBlank(), expected);
+    expect(("    this string is not empty" as String?).isNotBlank(), expected);
   });
 }

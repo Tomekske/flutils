@@ -1,4 +1,4 @@
-import 'package:utils/extensions/extensions.dart';
+import 'package:utils/extensions.dart';
 
 extension ListExtension<T> on List<T> {
   /// Print all items of the list
@@ -51,7 +51,7 @@ extension ListExtensionString<T> on List<String> {
       return true;
     }
 
-    return every((element) => element.trim() == "");
+    return every((element) => element.trim() == StringExtension.empty());
   }
 
   /// Checks wether a list is not blank
@@ -77,4 +77,52 @@ extension ListExtensionString<T> on List<String> {
   /// ["a", " ", "b"] => ["a", "b"]
   /// ["a", " ", " ", " ", "b"] => ["a", "b"]
   void removeBlankItems() => removeWhere((String item) => item.isBlank());
+}
+
+extension ListNullableExtension<T> on List<T>? {
+  /// Checks wether a list is null or blank
+  /// Examples:
+  /// null -> true
+  /// [0, 1, 2, 3] -> false
+  bool isBlank() {
+    if (this == null) {
+      return true;
+    }
+
+    return this!.isEmpty;
+  }
+
+  /// Checks wether a list is not blank
+  /// Examples:
+  /// null -> false
+  /// [0, 1, 2, 3] -> true
+  bool isNotBlank() => !isBlank();
+}
+
+extension ListNullableExtensionString<T> on List<String>? {
+  /// Checks wether a list is null or blank
+  /// Examples:
+  /// null -> true
+  /// ["a", "b", "c", "d"] -> false
+  /// [" ", " ", " ", " "] -> true
+  /// [" "] -> true
+  /// ["", "", "", ""] -> true
+  /// [""] -> true
+  bool isBlank() {
+    if (this == null || this!.isEmpty) {
+      return true;
+    }
+
+    return this!.every((element) => element.trim() == StringExtension.empty());
+  }
+
+  /// Checks wether a list is not null or blank
+  /// Examples:
+  /// null -> false
+  /// ["a", "b", "c", "d"] -> true
+  /// [" ", " ", " ", " "] -> false
+  /// [" "] -> false
+  /// ["", "", "", ""] -> false
+  /// [""] -> false
+  bool isNotBlank() => !isBlank();
 }

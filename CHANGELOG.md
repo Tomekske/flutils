@@ -1,3 +1,9 @@
+## 0.0.18
+* Reorganized unit tests -> less verbose
+* Added: a isBlank and isNotBlank extensions on nullable lists
+* Added: a isBlank and isNotBlank extensions on nullable Strings
+* Added: bottom sheet which displays a scrollable list of widgets
+
 ## 0.0.17
 * Added: static empty extension which returns an empty string
 

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:utils/enums/input_picker.dart';
-import 'package:utils/widgets/widgets.dart';
+import 'package:utils/widgets.dart';
 
 /// This class shows the bottom sheet content for sharing a recipe
 class InputBottomSheet {

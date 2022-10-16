@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:utils/theme/app_theme.dart' as AppTheme;
+import 'package:utils/app_theme.dart' as AppTheme;
 
 /// Confirmation dialog class
 class ConfirmationDialog {
