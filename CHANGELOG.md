@@ -1,3 +1,11 @@
+## 0.0.19
+* Added: expanded extension on widgets
+* Added: gestureDetector extension on widgets
+* Added: sizedBox extension on widgets
+* Added: padding extension on widgets
+* Added: SingleChildScrollView extension on Column
+* Added: SingleChildScrollView extension on Row
+
 ## 0.0.18
 * Reorganized unit tests -> less verbose
 * Added: a isBlank and isNotBlank extensions on nullable lists
