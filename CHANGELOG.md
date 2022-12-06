@@ -1,3 +1,7 @@
+## 0.0.25
+* Added: onTap gesture detection extension on widgets
+* Added: onLongPress gesture detection extension on widgets
+
 ## 0.0.24
 * Added: a floatingActionButton on the simpleScaffold widget
 * Added: a floatingActionButton on the basicScaffold widget

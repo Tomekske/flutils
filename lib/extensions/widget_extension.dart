@@ -7,8 +7,18 @@ extension WidgetExtension on Widget {
   /// Expand the parent widget
   Expanded expanded() => Expanded(child: this);
 
-  /// Detect gestures on the parent widget
-  GestureDetector gestureDetector() => GestureDetector(child: this);
+  /// Detect tap gestures on the parent widget
+  GestureDetector gestureOnTap(Function()? onTap) => GestureDetector(
+        onTap: onTap,
+        child: this,
+      );
+
+  /// Detect longPress gestures on the parent widget
+  GestureDetector gestureOnLongPress(Function()? onLongPress) =>
+      GestureDetector(
+        onLongPress: onLongPress,
+        child: this,
+      );
 
   /// Wrap the parent widget with a sized box
   SizedBox sizedBox() => SizedBox(child: this);
