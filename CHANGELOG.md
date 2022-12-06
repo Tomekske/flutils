@@ -1,3 +1,5 @@
+## 0.0.23
+* Fixed: Removed return button and the willPopScope from the basicScaffold widget
 ## 0.0.22
 * Added: basicScaffold widget
 * Added: actions to the simpleScaffold widget
@@ -7,7 +9,7 @@
 
 ## 0.0.20
 * Added: popScope extension on scaffold class
-* Added: simpleScaffold widget containing an appBar and onWillPopScope widget
+* Added: simpleScaffold widget containing an appBar and willPopScope widget
 
 ## 0.0.19
 * Added: expanded extension on widgets
