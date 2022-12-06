@@ -1,3 +1,7 @@
+## 0.0.20
+* Added: popScope extension on scaffold class
+* Added: simpleScaffold widget containing an appBar and onWillPopScope widget
+
 ## 0.0.19
 * Added: expanded extension on widgets
 * Added: gestureDetector extension on widgets
