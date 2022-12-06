@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-/// This widgets provides a scaffold with an appBar
+/// This widgets provides a scaffold with only an appBar
 class DefaultScaffold extends StatefulWidget {
   /// Property contains the [title] of the appBar
   final String title;

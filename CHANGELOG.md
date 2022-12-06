@@ -1,5 +1,9 @@
+## 0.0.22
+* Added: basicScaffold widget
+* Added: actions to the simpleScaffold widget
+
 ## 0.0.21
-* Added: defaultScaffold widget contains an appBar
+* Added: defaultScaffold widget
 
 ## 0.0.20
 * Added: popScope extension on scaffold class

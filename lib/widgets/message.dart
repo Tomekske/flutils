@@ -20,7 +20,9 @@ class Message extends StatelessWidget {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        if (widget != null) ...[widget!],
+        if (widget != null) ...[
+          widget!,
+        ],
         Padding(
           padding: const EdgeInsets.fromLTRB(0.0, 8.0, 0.0, 0.0),
           child: Text(
