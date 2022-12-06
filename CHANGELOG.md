@@ -1,3 +1,6 @@
+## 0.0.21
+* Added: defaultScaffold widget contains an appBar
+
 ## 0.0.20
 * Added: popScope extension on scaffold class
 * Added: simpleScaffold widget containing an appBar and onWillPopScope widget
