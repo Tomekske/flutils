@@ -1,3 +1,7 @@
+## 0.0.24
+* Added: a floatingActionButton on the simpleScaffold widget
+* Added: a floatingActionButton on the basicScaffold widget
+
 ## 0.0.23
 * Fixed: Removed return button and the willPopScope from the basicScaffold widget
 ## 0.0.22

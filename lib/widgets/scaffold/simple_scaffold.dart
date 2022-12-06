@@ -12,6 +12,12 @@ class SimpleScaffold extends StatefulWidget {
   /// Property contains a [drawer] which is located on the appBar
   List<Widget>? actions;
 
+  /// Property contains a bool which shows a [floatingActionButton]
+  bool? showButton;
+
+  /// Property contains a [onButtonPressed] callback whenever the button is pressed
+  Function()? onButtonPressed;
+
   /// Property contains an [onReturn] callback for both the return button as the onWillPopScope callback
   final Function()? onReturn;
 
@@ -19,6 +25,8 @@ class SimpleScaffold extends StatefulWidget {
     required this.title,
     required this.body,
     required this.onReturn,
+    this.showButton,
+    this.onButtonPressed,
     this.actions,
   }) : super();
 
@@ -39,6 +47,16 @@ class _SimpleScaffoldState extends State<SimpleScaffold> {
         actions: widget.actions,
       ),
       body: widget.body,
+      floatingActionButton: (widget.showButton ?? false)
+          ? FloatingActionButton(
+              elevation: 10.0,
+              onPressed: widget.onButtonPressed,
+              child: Icon(
+                Icons.add,
+                color: Theme.of(context).iconTheme.color,
+              ),
+            )
+          : null,
     ).popScope(() async {
       widget.onReturn?.call();
 
