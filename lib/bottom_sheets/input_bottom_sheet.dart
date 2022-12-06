@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:utils/enums/input_picker.dart';
 import 'package:utils/widgets.dart';
 
-/// This class shows the bottom sheet content for sharing a recipe
+/// This class shows the bottom sheet content for one single inputBox
 class InputBottomSheet {
   /// Property contains the build [context]
   BuildContext context;
