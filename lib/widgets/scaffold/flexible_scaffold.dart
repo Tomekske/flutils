@@ -1,17 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:utils/extensions/scaffold_extension.dart';
+import 'package:utils/extensions/string_extension.dart';
 
-/// This widgets provides a scaffold with a picture appBar and an onWillScope
-class PictureScaffold extends StatefulWidget {
+/// This widgets provides a scaffold with a widget that is displayed within the appBar and an onWillScope
+class FlexibleScaffold extends StatefulWidget {
   /// Property contains the [title] of the appBar
-  final String title;
+  /// The default value is ''
+  String? title;
 
   /// Property contains the [height] of the picture
   /// The default value is 250.0
   double? height;
 
-  /// Property contains the [picture] and accepts providers such as NetworkImage, FileImage, MemoryImage, AssetImage and FileImage
-  ImageProvider<Object> picture;
+  /// Property contains the [widget] which is displayed within the appBar
+  Widget widget;
 
   /// How to [fit] the image into the space allocated during layout
   /// The default value is BoxFit.cover
@@ -33,10 +35,10 @@ class PictureScaffold extends StatefulWidget {
   /// Property contains an [onReturn] callback for both the return button as the onWillPopScope callback
   final Function()? onReturn;
 
-  PictureScaffold({
-    required this.title,
+  FlexibleScaffold({
+    this.title,
     this.height,
-    required this.picture,
+    required this.widget,
     this.fit,
     required this.body,
     required this.onReturn,
@@ -46,10 +48,10 @@ class PictureScaffold extends StatefulWidget {
   }) : super();
 
   @override
-  State<PictureScaffold> createState() => _PictureScaffoldState();
+  State<FlexibleScaffold> createState() => _FlexibleScaffoldState();
 }
 
-class _PictureScaffoldState extends State<PictureScaffold> {
+class _FlexibleScaffoldState extends State<FlexibleScaffold> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -60,11 +62,8 @@ class _PictureScaffoldState extends State<PictureScaffold> {
             icon: Icon(Icons.arrow_back),
             onPressed: widget.onReturn,
           ),
-          flexibleSpace: Image(
-            image: widget.picture,
-            fit: widget.fit ?? BoxFit.cover,
-          ),
-          title: Text(widget.title),
+          flexibleSpace: widget.widget,
+          title: Text(widget.title ?? StringExtension.empty()),
           actions: widget.actions,
         ),
       ),

@@ -1,3 +1,7 @@
+## 0.0.27
+* Improvement: Renamed pictureScaffold to flexibleScaffold
+* Fixed: flexibleScaffold title property is optional now
+
 ## 0.0.26
 * Added: pictureScaffold widget containing a picture appBar and willPopScope widget
 ## 0.0.25
