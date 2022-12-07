@@ -9,7 +9,7 @@ class FlexibleScaffold extends StatefulWidget {
   String? title;
 
   /// Property contains the [height] of the picture
-  /// The default value is 250.0
+  /// The default value is 200.0
   double? height;
 
   /// Property contains the [widget] which is displayed within the appBar
@@ -56,7 +56,7 @@ class _FlexibleScaffoldState extends State<FlexibleScaffold> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: PreferredSize(
-        preferredSize: Size.fromHeight(widget.height ?? 250.0),
+        preferredSize: Size.fromHeight(widget.height ?? 200.0),
         child: AppBar(
           leading: IconButton(
             icon: Icon(Icons.arrow_back),

@@ -16,7 +16,7 @@ class PictureAppBar extends StatelessWidget {
   BoxFit? boxFit;
 
   /// How to [fit] the non-positioned children in the stack.
-  /// The default value is StackFit.passthrough
+  /// The default value is StackFit.expand
   StackFit? stackFit;
 
   PictureAppBar({
@@ -29,7 +29,7 @@ class PictureAppBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Stack(
-      fit: StackFit.passthrough,
+      fit: StackFit.expand,
       children: [
         Image(
           image: picture,

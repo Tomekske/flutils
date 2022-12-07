@@ -1,3 +1,7 @@
+## 0.0.29
+* Improved: pictureAppBar -> changed stackFit's default value to StackFit.expand
+* Improved: flexibleScaffold -> changed height's default value to 200.0
+
 ## 0.0.28
 * Added: The pictureAppBar widget shows a text on a picture
 
