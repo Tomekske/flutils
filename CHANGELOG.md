@@ -1,3 +1,6 @@
+## 0.0.28
+* Added: The pictureAppBar widget shows a text on a picture
+
 ## 0.0.27
 * Improvement: Renamed pictureScaffold to flexibleScaffold
 * Fixed: flexibleScaffold title property is optional now
