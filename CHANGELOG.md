@@ -1,3 +1,5 @@
+## 0.0.26
+* Added: pictureScaffold widget containing a picture appBar and willPopScope widget
 ## 0.0.25
 * Added: onTap gesture detection extension on widgets
 * Added: onLongPress gesture detection extension on widgets
