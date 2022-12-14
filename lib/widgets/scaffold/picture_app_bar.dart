@@ -21,29 +21,34 @@ class PictureAppBar extends StatelessWidget {
 
   PictureAppBar({
     required this.picture,
-    required this.text,
+    this.text,
     this.boxFit,
     this.stackFit,
   }) : super();
 
   @override
   Widget build(BuildContext context) {
-    return Stack(
-      fit: StackFit.expand,
-      children: [
-        Image(
-          image: picture,
-          fit: boxFit ?? BoxFit.cover,
-        ),
-        Positioned(
-          bottom: 15,
-          left: 15,
-          child: Text(
-            text ?? StringExtension.empty(),
-            style: AppTheme.TextTheme.whiteBold40,
-          ),
-        ),
-      ],
-    );
+    return text != null
+        ? Stack(
+            fit: StackFit.expand,
+            children: [
+              Image(
+                image: picture,
+                fit: boxFit ?? BoxFit.cover,
+              ),
+              Positioned(
+                bottom: 15,
+                left: 15,
+                child: Text(
+                  text ?? StringExtension.empty(),
+                  style: AppTheme.TextTheme.whiteBold40,
+                ),
+              ),
+            ],
+          )
+        : Image(
+            image: picture,
+            fit: boxFit ?? BoxFit.cover,
+          );
   }
 }

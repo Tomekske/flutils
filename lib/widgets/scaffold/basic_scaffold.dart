@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:utils/extensions/scaffold_extension.dart';
 
 /// This widgets provides a scaffold with an appBar and an onWillScope
 class BasicScaffold extends StatefulWidget {

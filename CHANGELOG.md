@@ -1,3 +1,6 @@
+## 0.0.30
+* Fixed: pictureAppBar -> title is optional
+
 ## 0.0.29
 * Improved: pictureAppBar -> changed stackFit's default value to StackFit.expand
 * Improved: flexibleScaffold -> changed height's default value to 200.0
