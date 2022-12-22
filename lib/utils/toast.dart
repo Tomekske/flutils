@@ -14,7 +14,7 @@ class Toast {
       SnackBar(
         content: Text(
           message,
-          style: AppTheme.TextTheme.white19,
+          style: AppTheme.TextTheme.white[19],
         ),
         backgroundColor: Theme.of(context).canvasColor,
       ),
@@ -27,7 +27,7 @@ class Toast {
       SnackBar(
         content: Text(
           message,
-          style: AppTheme.TextTheme.white19,
+          style: AppTheme.TextTheme.white[19],
         ),
         backgroundColor: Colors.red,
       ),

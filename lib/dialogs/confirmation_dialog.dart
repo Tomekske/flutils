@@ -42,7 +42,7 @@ class ConfirmationDialog {
               TextButton(
                   child: Text(
                     "Cancel",
-                    style: AppTheme.TextTheme.white14,
+                    style: AppTheme.TextTheme.white[14],
                   ),
                   onPressed: () {
                     Navigator.of(context).pop();
@@ -54,7 +54,7 @@ class ConfirmationDialog {
                 onPressed: confirmationEvent,
                 child: Text(
                   confirmationText,
-                  style: AppTheme.TextTheme.white14,
+                  style: AppTheme.TextTheme.white[14],
                 ),
               ),
             ],

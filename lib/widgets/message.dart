@@ -27,7 +27,7 @@ class Message extends StatelessWidget {
           padding: const EdgeInsets.fromLTRB(0.0, 8.0, 0.0, 0.0),
           child: Text(
             message,
-            style: style ?? AppTheme.TextTheme.whiteBold30,
+            style: style ?? AppTheme.TextTheme.whiteBold[30],
           ),
         )
       ],

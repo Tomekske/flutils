@@ -1,8 +1,13 @@
 extension StringExtension on String {
-  /// Elegant way to returns an empty string
+  /// Elegant way to return an empty string
   /// Examples:
   /// StringExtension.empty() -> ''
   static String empty() => '';
+
+  /// Elegant way to return a whitespace
+  /// Examples:
+  /// StringExtension.whitespace() -> ' '
+  static String whitespace() => ' ';
 
   /// Capitalize the first letter of a word within a string
   /// Examples:
@@ -31,6 +36,16 @@ extension StringExtension on String {
   /// "" -> false
   /// "   " -> false
   bool isNotBlank() => !isBlank();
+
+  /// Reverse the string order
+  /// Examples:
+  /// "abc" -> "cba"
+  /// "ABC" -> "CBA"
+  /// "aBc" -> "cBA"
+  /// "Reverse this string" -> "gnirts siht esreveR"
+  /// "" -> ""
+  /// " " -> " "
+  String reverse() => String.fromCharCodes(codeUnits.reversed);
 }
 
 extension StringNullableExtension on String? {
@@ -57,4 +72,21 @@ extension StringNullableExtension on String? {
   /// "" -> false
   /// "   " -> false
   bool isNotBlank() => !isBlank();
+
+  /// Reverse the string order
+  /// Examples:
+  /// null -> null
+  /// "abc" -> "cba"
+  /// "ABC" -> "CBA"
+  /// "aBc" -> "cBA"
+  /// "Reverse this string" -> "gnirts siht esreveR"
+  /// "" -> ""
+  /// " " -> " "
+  String? reverse() {
+    if (this == null) {
+      return null;
+    }
+
+    return String.fromCharCodes(this!.codeUnits.reversed);
+  }
 }

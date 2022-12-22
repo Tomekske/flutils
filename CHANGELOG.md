@@ -1,3 +1,9 @@
+## 0.0.31
+* Added: reverse string extension on strings
+* Added: separate integers extension on int
+* Added: separate doubles extension on double
+* Improvement: white, whiteBold, grey and greyBold textStyle arrays instead of hardcoded values
+
 ## 0.0.30
 * Fixed: pictureAppBar -> title is optional
 
