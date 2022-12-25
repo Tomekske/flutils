@@ -1,4 +1,8 @@
-## 0.0.31
+## 0.0.33
+* Added: Font family Poppins
+* Improved: Updated the font sizes
+
+## 0.0.32
 * Added: Font size constants
 
 ## 0.0.31

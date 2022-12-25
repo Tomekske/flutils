@@ -1,6 +1,6 @@
 name: utils
 description: This package contains utilities which are commonly used in my private projects
-version: 0.0.32
+version: 0.0.33
 homepage:
 
 environment:
@@ -40,10 +40,10 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
-  # fonts:
-  #   - family: Schyler
-  #     fonts:
-  #       - asset: fonts/Schyler-Regular.ttf
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: fonts/Poppins-ExtraLight.ttf
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
   #   - family: Trajan Pro
