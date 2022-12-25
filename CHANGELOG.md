@@ -1,4 +1,7 @@
 ## 0.0.31
+* Added: Font size constants
+
+## 0.0.31
 * Added: reverse string extension on strings
 * Added: separate integers extension on int
 * Added: separate doubles extension on double

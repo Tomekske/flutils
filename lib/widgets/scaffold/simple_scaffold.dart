@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:utils/constants/font_size.dart';
 import 'package:utils/extensions/scaffold_extension.dart';
 
 /// This widgets provides a scaffold with an appBar and an onWillScope
@@ -43,7 +44,10 @@ class _SimpleScaffoldState extends State<SimpleScaffold> {
           icon: Icon(Icons.arrow_back),
           onPressed: widget.onReturn,
         ),
-        title: Text(widget.title),
+        title: Text(
+          widget.title,
+          style: FontSize.pageTile,
+        ),
         actions: widget.actions,
       ),
       body: widget.body,
