@@ -1,6 +1,6 @@
 name: utils
 description: This package contains utilities which are commonly used in my private projects
-version: 0.0.37
+version: 0.0.38
 homepage:
 
 environment:
@@ -26,8 +26,8 @@ dev_dependencies:
 flutter:
 
   # To add assets to your package, add an assets section, like this:
-  # assets:
-  #   - images/a_dot_burr.jpeg
+  assets:
+    - fonts/
   #   - images/a_dot_ham.jpeg
   #
   # For details regarding assets in packages, see

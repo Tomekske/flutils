@@ -1,3 +1,6 @@
+## 0.0.38
+* Added: Google Fonts Poppins as assets
+
 ## 0.0.37
 * Fixed: Changed picture title font size 35
 * Fixed: Removed the embedded font
