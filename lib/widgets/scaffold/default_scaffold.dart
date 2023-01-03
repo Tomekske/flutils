@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:utils/constants/font_size.dart';
 
 /// This widgets provides a scaffold with only an appBar
 class DefaultScaffold extends StatefulWidget {
@@ -25,7 +24,7 @@ class _DefaultScaffoldState extends State<DefaultScaffold> {
       appBar: AppBar(
         title: Text(
           widget.title,
-          style: FontSize.pageTile,
+          style: Theme.of(context).textTheme.headline6,
         ),
       ),
       body: widget.body,

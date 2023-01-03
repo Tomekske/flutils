@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class TextTheme {
   /// This constructor prevents instantiation and extension.
@@ -8,9 +9,9 @@ class TextTheme {
   /// Example: TextTheme.white[20]
   static List<TextStyle> white = List<TextStyle>.generate(
     100,
-    (size) => TextStyle(
+    (size) => GoogleFonts.poppins(
       color: Colors.white,
-      fontSize: size * 1.0,
+      fontSize: size.toDouble(),
     ),
   );
 
@@ -18,9 +19,9 @@ class TextTheme {
   /// Example: TextTheme.whiteBold[20]
   static List<TextStyle> whiteBold = List<TextStyle>.generate(
     100,
-    (size) => TextStyle(
+    (size) => GoogleFonts.poppins(
       color: Colors.white,
-      fontSize: size * 1.0,
+      fontSize: size.toDouble(),
       fontWeight: FontWeight.bold,
     ),
   );
@@ -29,9 +30,9 @@ class TextTheme {
   /// Example: TextTheme.grey[20]
   static List<TextStyle> grey = List<TextStyle>.generate(
     100,
-    (size) => TextStyle(
+    (size) => GoogleFonts.poppins(
       color: Colors.grey[300],
-      fontSize: size * 1.0,
+      fontSize: size.toDouble(),
     ),
   );
 
@@ -39,9 +40,9 @@ class TextTheme {
   /// Example: TextTheme.greyBold[20]
   static List<TextStyle> greyBold = List<TextStyle>.generate(
     100,
-    (size) => TextStyle(
+    (size) => GoogleFonts.poppins(
       color: Colors.grey[300],
-      fontSize: size * 1.0,
+      fontSize: size.toDouble(),
       fontWeight: FontWeight.bold,
     ),
   );

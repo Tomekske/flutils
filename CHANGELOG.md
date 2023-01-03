@@ -1,3 +1,6 @@
+# 0.0.34
+* Improved: Implemented text themes
+
 ## 0.0.33
 * Added: Font family Poppins
 * Improved: Updated the font sizes

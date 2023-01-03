@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:utils/constants/font_size.dart';
 
 /// This widgets provides a scaffold with an appBar and an onWillScope
 class BasicScaffold extends StatefulWidget {
@@ -42,7 +41,7 @@ class _BasicScaffoldState extends State<BasicScaffold> {
       appBar: AppBar(
         title: Text(
           widget.title,
-          style: FontSize.pageTile,
+          style: Theme.of(context).textTheme.headline6,
         ),
         actions: widget.actions,
       ),

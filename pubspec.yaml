@@ -1,6 +1,6 @@
 name: utils
 description: This package contains utilities which are commonly used in my private projects
-version: 0.0.33
+version: 0.0.34
 homepage:
 
 environment:
@@ -9,6 +9,7 @@ environment:
 
 dependencies:
   lint: ^1.5.3
+  google_fonts: ^3.0.1
   flutter:
     sdk: flutter
 

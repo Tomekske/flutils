@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:utils/constants/font_size.dart';
 import 'package:utils/extensions/scaffold_extension.dart';
 import 'package:utils/extensions/string_extension.dart';
 
@@ -66,7 +65,7 @@ class _FlexibleScaffoldState extends State<FlexibleScaffold> {
           flexibleSpace: widget.widget,
           title: Text(
             widget.title ?? StringExtension.empty(),
-            style: FontSize.pageTile,
+            style: Theme.of(context).textTheme.headline6,
           ),
           actions: widget.actions,
         ),
