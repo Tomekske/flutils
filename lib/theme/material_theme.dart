@@ -28,7 +28,6 @@ class MaterialTheme {
     iconTheme: IconThemeData(
       color: Colors.white,
     ),
-    fontFamily: 'Poppins',
     textTheme: TextTheme(
       headline1: GoogleFonts.poppins(
         color: Colors.white,

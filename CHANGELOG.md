@@ -1,10 +1,14 @@
-# 0.0.36
+## 0.0.37
+* Fixed: Changed picture title font size 35
+* Fixed: Removed the embedded font
+
+## 0.0.36
 * Fixed: Changed picture title font headline4 to headline2
 
-# 0.0.35
+## 0.0.35
 * Fixed: Assigned a white text color to the text themes
 
-# 0.0.34
+## 0.0.34
 * Improved: Implemented text themes
 
 ## 0.0.33
