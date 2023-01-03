@@ -1,3 +1,6 @@
+# 0.0.36
+* Fixed: Changed picture title font headline4 to headline2
+
 # 0.0.35
 * Fixed: Assigned a white text color to the text themes
 

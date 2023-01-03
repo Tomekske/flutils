@@ -40,7 +40,7 @@ class PictureAppBar extends StatelessWidget {
                 left: 15,
                 child: Text(
                   text ?? StringExtension.empty(),
-                  style: Theme.of(context).textTheme.headline4,
+                  style: Theme.of(context).textTheme.headline2,
                 ),
               ),
             ],
