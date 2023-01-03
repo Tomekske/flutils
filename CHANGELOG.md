@@ -1,3 +1,6 @@
+# 0.0.35
+* Fixed: Assigned a white text color to the text themes
+
 # 0.0.34
 * Improved: Implemented text themes
 
