@@ -24,6 +24,13 @@ extension IntExtension on int {
 
     return n.toString().reverse();
   }
+
+  /// Prints the distance in kilometers
+  /// Examples:
+  /// 1: 1 km
+  /// 20: 20 km
+  /// 2000: 200 km
+  String distance() => "$this km";
 }
 
 extension IntNullableExtension on int? {
@@ -53,5 +60,18 @@ extension IntNullableExtension on int? {
     }
 
     return n.toString().reverse();
+  }
+
+  /// Prints the distance in kilometers
+  /// Examples:
+  /// 1: 1 km
+  /// 20: 20 km
+  /// 2000: 200 km
+  String? distance() {
+    if (this == null) {
+      return null;
+    }
+
+    return "$this km";
   }
 }

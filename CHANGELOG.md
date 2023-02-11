@@ -1,3 +1,8 @@
+## 0.0.39
+* Added: removeDecimal extension on doubles
+* Added: distance extension on doubles 
+* Added: distance extension on integers 
+
 ## 0.0.38
 * Added: Google Fonts Poppins as assets
 

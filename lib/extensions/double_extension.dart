@@ -29,6 +29,29 @@ extension DoubleExtension on double {
 
     return "$reverse$decimal${split.last}";
   }
+
+  /// Remove everything after the decimal
+  /// Examples:
+  /// 10.0 -> 10
+  /// 134.58 -> 134
+  String removeDecimal() => toString().split(".")[0];
+
+  /// Prints the distance in kilometers
+  /// Examples:
+  /// 1: 1 km
+  /// 20: 20 km
+  /// 2000: 200 km
+  String distance() {
+    if (this >= 1.0) {
+      if (toInt() == this) {
+        return "${removeDecimal()} km";
+      }
+
+      return "$this km";
+    }
+
+    return "${(this * 1000).removeDecimal()} m";
+  }
 }
 
 extension DoubleNullableExtension on double? {
@@ -63,5 +86,38 @@ extension DoubleNullableExtension on double? {
     final String reverse = n.toString().reverse();
 
     return "$reverse$decimal${split.last}";
+  }
+
+  /// Remove everything after the decimal
+  /// Examples:
+  /// 10.0 -> 10
+  /// 134.58 -> 134
+  String? removeDecimal() {
+    if (this == null) {
+      return null;
+    }
+
+    return toString().split(".")[0];
+  }
+
+  /// Prints the distance in kilometers
+  /// Examples:
+  /// 1: 1 km
+  /// 20: 20 km
+  /// 2000: 200 km
+  String? distance() {
+    if (this == null) {
+      return null;
+    }
+
+    if (this! >= 1.0) {
+      if (this!.toInt() == this) {
+        return "${removeDecimal()} km";
+      }
+
+      return "$this km";
+    }
+
+    return "${(this! * 1000).removeDecimal()} m";
   }
 }
