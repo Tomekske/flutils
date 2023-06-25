@@ -1,3 +1,6 @@
+## 0.0.40
+* Improved: Updated the SDK and fixed the issues
+
 ## 0.0.39
 * Added: removeDecimal extension on doubles
 * Added: distance extension on doubles 

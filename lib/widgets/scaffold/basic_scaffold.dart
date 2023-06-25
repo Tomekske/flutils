@@ -41,7 +41,7 @@ class _BasicScaffoldState extends State<BasicScaffold> {
       appBar: AppBar(
         title: Text(
           widget.title,
-          style: Theme.of(context).textTheme.headline6,
+          style: Theme.of(context).textTheme.titleLarge,
         ),
         actions: widget.actions,
       ),

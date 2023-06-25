@@ -8,11 +8,6 @@ class MaterialTheme {
       backgroundColor: Color(0xFF272727),
     ),
     scaffoldBackgroundColor: Color(0xFF121212),
-    backgroundColor: Color(0xFF121212),
-    colorScheme: ColorScheme.dark().copyWith(
-      primary: Colors.red,
-      secondary: Colors.red,
-    ),
     chipTheme: ChipThemeData(
       backgroundColor: Colors.red,
     ),
@@ -29,82 +24,85 @@ class MaterialTheme {
       color: Colors.white,
     ),
     textTheme: TextTheme(
-      headline1: GoogleFonts.poppins(
+      displayLarge: GoogleFonts.poppins(
         color: Colors.white,
         fontSize: 93,
         fontWeight: FontWeight.w300,
         letterSpacing: -1.5,
       ),
-      headline2: GoogleFonts.poppins(
+      displayMedium: GoogleFonts.poppins(
         color: Colors.white,
         fontSize: 58,
         fontWeight: FontWeight.w300,
         letterSpacing: -0.5,
       ),
-      headline3: GoogleFonts.poppins(
+      displaySmall: GoogleFonts.poppins(
         color: Colors.white,
         fontSize: 46,
         fontWeight: FontWeight.w400,
       ),
-      headline4: GoogleFonts.poppins(
+      headlineMedium: GoogleFonts.poppins(
         color: Colors.white,
         fontSize: 33,
         fontWeight: FontWeight.w400,
         letterSpacing: 0.25,
       ),
-      headline5: GoogleFonts.poppins(
+      headlineSmall: GoogleFonts.poppins(
         color: Colors.white,
         fontSize: 23,
         fontWeight: FontWeight.w400,
       ),
-      headline6: GoogleFonts.poppins(
+      titleLarge: GoogleFonts.poppins(
         color: Colors.white,
         fontSize: 19,
         fontWeight: FontWeight.w500,
         letterSpacing: 0.15,
       ),
-      subtitle1: GoogleFonts.poppins(
+      titleMedium: GoogleFonts.poppins(
         color: Colors.white,
         fontSize: 15,
         fontWeight: FontWeight.w400,
         letterSpacing: 0.15,
       ),
-      subtitle2: GoogleFonts.poppins(
+      titleSmall: GoogleFonts.poppins(
         color: Colors.white,
         fontSize: 13,
         fontWeight: FontWeight.w500,
         letterSpacing: 0.1,
       ),
-      bodyText1: GoogleFonts.poppins(
+      bodyLarge: GoogleFonts.poppins(
         color: Colors.white,
         fontSize: 15,
         fontWeight: FontWeight.w400,
         letterSpacing: 0.5,
       ),
-      bodyText2: GoogleFonts.poppins(
+      bodyMedium: GoogleFonts.poppins(
         color: Colors.white,
         fontSize: 13,
         fontWeight: FontWeight.w400,
         letterSpacing: 0.25,
       ),
-      button: GoogleFonts.poppins(
+      labelLarge: GoogleFonts.poppins(
         color: Colors.white,
         fontSize: 13,
         fontWeight: FontWeight.w500,
         letterSpacing: 1.25,
       ),
-      caption: GoogleFonts.poppins(
+      bodySmall: GoogleFonts.poppins(
         color: Colors.white,
         fontSize: 12,
         fontWeight: FontWeight.w400,
         letterSpacing: 0.4,
       ),
-      overline: GoogleFonts.poppins(
+      labelSmall: GoogleFonts.poppins(
         color: Colors.white,
         fontSize: 10,
         fontWeight: FontWeight.w400,
         letterSpacing: 1.5,
       ),
-    ),
+    ), colorScheme: ColorScheme.dark().copyWith(
+      primary: Colors.red,
+      secondary: Colors.red,
+    ).copyWith(background: Color(0xFF121212)),
   );
 }

@@ -65,7 +65,7 @@ class _FlexibleScaffoldState extends State<FlexibleScaffold> {
           flexibleSpace: widget.widget,
           title: Text(
             widget.title ?? StringExtension.empty(),
-            style: Theme.of(context).textTheme.headline6,
+            style: Theme.of(context).textTheme.titleLarge,
           ),
           actions: widget.actions,
         ),

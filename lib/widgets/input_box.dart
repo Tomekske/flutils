@@ -4,6 +4,7 @@ import 'package:utils/enums/input_picker.dart';
 /// Input widget with a clear button
 class InputBox extends StatefulWidget {
   /// Property contains a [key]
+  @override
   Key? key;
 
   /// Property contains the [hint] text of the input box

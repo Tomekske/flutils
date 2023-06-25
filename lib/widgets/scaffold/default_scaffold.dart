@@ -24,7 +24,7 @@ class _DefaultScaffoldState extends State<DefaultScaffold> {
       appBar: AppBar(
         title: Text(
           widget.title,
-          style: Theme.of(context).textTheme.headline6,
+          style: Theme.of(context).textTheme.titleLarge,
         ),
       ),
       body: widget.body,
