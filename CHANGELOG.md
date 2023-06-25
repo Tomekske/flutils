@@ -1,5 +1,8 @@
+## 0.0.41
+* Updated: updated major packages
+
 ## 0.0.40
-* Improved: Updated the SDK and fixed the issues
+* Improved: updated the SDK and fixed the issues
 
 ## 0.0.39
 * Added: removeDecimal extension on doubles
@@ -7,27 +10,27 @@
 * Added: distance extension on integers 
 
 ## 0.0.38
-* Added: Google Fonts Poppins as assets
+* Added: google Fonts Poppins as assets
 
 ## 0.0.37
-* Fixed: Changed picture title font size 35
-* Fixed: Removed the embedded font
+* Fixed: changed picture title font size 35
+* Fixed: removed the embedded font
 
 ## 0.0.36
-* Fixed: Changed picture title font headline4 to headline2
+* Fixed: changed picture title font headline4 to headline2
 
 ## 0.0.35
-* Fixed: Assigned a white text color to the text themes
+* Fixed: assigned a white text color to the text themes
 
 ## 0.0.34
-* Improved: Implemented text themes
+* Improved: implemented text themes
 
 ## 0.0.33
-* Added: Font family Poppins
-* Improved: Updated the font sizes
+* Added: font family Poppins
+* Improved: updated the font sizes
 
 ## 0.0.32
-* Added: Font size constants
+* Added: font size constants
 
 ## 0.0.31
 * Added: reverse string extension on strings
