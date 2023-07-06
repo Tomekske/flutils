@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:utils/enums/input_picker.dart';
+import 'package:utils/data/enums/input_mode.dart';
 
-/// Input widget with a clear button
-class InputBox extends StatefulWidget {
+class MaterialTextBox extends StatefulWidget {
   /// Property contains a [key]
   @override
   Key? key;
@@ -13,29 +12,28 @@ class InputBox extends StatefulWidget {
   /// Property contains the input [controller] object
   final TextEditingController controller;
 
-  /// Property to set the input mode
-  final InputPicker inputPicker;
+  /// Property to set the [inputMode]
+  final InputMode inputMode;
 
-  /// Property sets the [keyboardType] such as: text, phone, multiline, passwords, ...
-  /// Note that the input box behaves accordingly chosen [keyboardType]
+  /// Property to set the [keyboardType]
   TextInputType? keyboardType;
 
-  /// Property sets the [textInputAction] button of the soft keyboard such as: done, go, search, ...
-  /// Note that the visual representation doesn't cause any specific behavior
+  /// Property to set the [textInputAction]
+  /// The visual appearance does not cause any special behavior.
   TextInputAction? textInputAction;
 
-  /// [autoFocus] determines wether an input box is auto focused
+  /// Property to set the [autoFocus] on the input box
   bool? autoFocus;
 
-  /// The [onSubmit] callback returns the text of given text input
+  /// The [onSubmit] callback contains the input box's text
   Function(String text)? onSubmit;
 
-  /// Input widget with a clear button
-  InputBox({
+  /// A class that provides platform-specific Material UI input box widget.
+  MaterialTextBox({
     this.key,
     required this.hint,
     required this.controller,
-    required this.inputPicker,
+    required this.inputMode,
     this.keyboardType,
     this.textInputAction,
     this.autoFocus,
@@ -43,10 +41,10 @@ class InputBox extends StatefulWidget {
   }) : super();
 
   @override
-  _InputBoxState createState() => _InputBoxState();
+  _MaterialTextBoxState createState() => _MaterialTextBoxState();
 }
 
-class _InputBoxState extends State<InputBox> {
+class _MaterialTextBoxState extends State<MaterialTextBox> {
   FocusNode? focusNode;
 
   @override
@@ -69,7 +67,7 @@ class _InputBoxState extends State<InputBox> {
           decoration: InputDecoration(
             fillColor: Theme.of(context).secondaryHeaderColor,
             labelText: widget.hint,
-            suffixIcon: setInputSuffix(widget.inputPicker),
+            suffixIcon: setInputSuffix(widget.inputMode),
           ),
           keyboardType: widget.keyboardType ?? TextInputType.text,
           maxLines: null,
@@ -80,8 +78,8 @@ class _InputBoxState extends State<InputBox> {
     );
   }
 
-  /// Set the correct input suffix on a given [inputPicker]
-  IconButton setInputSuffix(InputPicker inputPicker) {
+  /// Returns the appropriate input suffix widget based on the current [inputMode]
+  IconButton setInputSuffix(InputMode inputMode) {
     return IconButton(
       onPressed: () {
         widget.controller.clear();

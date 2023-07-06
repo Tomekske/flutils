@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:utils/enums/input_picker.dart';
-import 'package:utils/widgets.dart';
+import 'package:utils/enums.dart';
+import 'package:utils/widgets/platform_ui/text_box/material_text_box.dart';
 
 /// This class shows the bottom sheet content for one single inputBox
 class InputBottomSheet {
@@ -69,10 +69,10 @@ class InputBottomSheet {
                         onClose(text);
                       },
                     ),
-                    InputBox(
+                    MaterialTextBox(
                       hint: hint,
                       controller: textController,
-                      inputPicker: InputPicker.clear,
+                      inputMode: InputMode.clear,
                       autoFocus: true,
                       onSubmit: (String submittedText) {
                         text = submittedText;
