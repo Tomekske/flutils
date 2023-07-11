@@ -1,3 +1,4 @@
+/// Extensions within the utils package.
 library extensions;
 
 export 'extensions/double_extension.dart';

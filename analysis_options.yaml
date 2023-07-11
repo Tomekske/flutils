@@ -30,7 +30,6 @@ analyzer:
 linter:
   rules:
     sort_pub_dependencies: false
-    argument_type_not_assignable: false
     prefer_const_constructors_in_immutables: false
     library_prefixes: false
     avoid_bool_literals_in_conditional_expressions: false

@@ -4,7 +4,7 @@ extension WidgetExtension on Widget {
   /// Center the parent widget
   Widget center() => Center(child: this);
 
-  /// Expand the parent widget
+  /// Expand the parent widget, should only be used on a column, row or flex
   Expanded expanded() => Expanded(child: this);
 
   /// Detect tap gestures on the parent widget
