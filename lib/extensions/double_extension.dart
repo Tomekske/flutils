@@ -1,4 +1,4 @@
-import 'package:utils/extensions/string_extension.dart';
+import 'package:flutils/extensions/string_extension.dart';
 
 extension DoubleExtension on double {
   /// Divide a double into repeating [groups] separated by a [radix] and [decimal]

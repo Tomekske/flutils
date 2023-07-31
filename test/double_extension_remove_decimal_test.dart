@@ -1,7 +1,7 @@
 // ignore_for_file: unnecessary_cast
 
+import 'package:flutils/extensions.dart';
 import 'package:test/test.dart';
-import 'package:utils/extensions.dart';
 
 void main() {
   test("Remove decimal", () {

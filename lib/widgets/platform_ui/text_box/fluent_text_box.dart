@@ -2,7 +2,7 @@ import 'dart:io';
 
 import 'package:file_picker/file_picker.dart';
 import 'package:fluent_ui/fluent_ui.dart';
-import 'package:utils/data/enums/input_mode.dart';
+import 'package:flutils/data/enums/input_mode.dart';
 
 class FluentTextBox extends StatefulWidget {
   /// Property contains the [hint] text of the input box

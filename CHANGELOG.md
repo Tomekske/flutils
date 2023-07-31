@@ -1,4 +1,7 @@
 ## 0.0.42
+- Renamed: package utils to flutils
+
+## 0.0.42
 - Updated: readme file
 - Added: toast utility class
 

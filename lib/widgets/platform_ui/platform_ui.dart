@@ -1,14 +1,14 @@
 import 'dart:io';
 
+import 'package:flutils/data/enums/input_mode.dart';
+import 'package:flutils/data/models/platform_theme.dart';
+import 'package:flutils/widgets/platform_ui/button/fluent_button.dart';
+import 'package:flutils/widgets/platform_ui/button/material_button.dart';
+import 'package:flutils/widgets/platform_ui/platform/fluent_platform.dart';
+import 'package:flutils/widgets/platform_ui/platform/material_platform.dart';
+import 'package:flutils/widgets/platform_ui/text_box/fluent_text_box.dart';
+import 'package:flutils/widgets/platform_ui/text_box/material_text_box.dart';
 import 'package:flutter/material.dart';
-import 'package:utils/data/enums/input_mode.dart';
-import 'package:utils/data/models/platform_theme.dart';
-import 'package:utils/widgets/platform_ui/button/fluent_button.dart';
-import 'package:utils/widgets/platform_ui/button/material_button.dart';
-import 'package:utils/widgets/platform_ui/platform/fluent_platform.dart';
-import 'package:utils/widgets/platform_ui/platform/material_platform.dart';
-import 'package:utils/widgets/platform_ui/text_box/fluent_text_box.dart';
-import 'package:utils/widgets/platform_ui/text_box/material_text_box.dart';
 
 /// A class that provides platform-specific UI components.
 class PlatformUI {

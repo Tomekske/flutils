@@ -1,4 +1,4 @@
-import 'package:utils/extensions/string_extension.dart';
+import 'package:flutils/extensions/string_extension.dart';
 
 extension IntExtension on int {
   /// Divide an integer into repeating [groups] separated by a [radix]

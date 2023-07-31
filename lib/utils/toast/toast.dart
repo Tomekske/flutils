@@ -1,8 +1,8 @@
 import 'dart:io';
 
+import 'package:flutils/utils/toast/fluent_toast.dart';
+import 'package:flutils/utils/toast/material_toast.dart';
 import 'package:flutter/widgets.dart';
-import 'package:utils/utils/toast/fluent_toast.dart';
-import 'package:utils/utils/toast/material_toast.dart';
 
 /// An facade class that contains the toast methods for the Fluent UI and Material toast.
 /// ```dart

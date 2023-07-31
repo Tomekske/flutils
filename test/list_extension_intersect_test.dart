@@ -1,5 +1,5 @@
+import 'package:flutils/extensions.dart';
 import 'package:test/test.dart';
-import 'package:utils/extensions.dart';
 
 void main() {
   test("intersect: list of integers -> [1, 2, 3] ∩ [2, 3] -> [2, 3]", () {

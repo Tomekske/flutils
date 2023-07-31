@@ -1,6 +1,6 @@
+import 'package:flutils/app_theme.dart' as AppTheme;
+import 'package:flutils/extensions.dart';
 import 'package:flutter/material.dart';
-import 'package:utils/app_theme.dart' as AppTheme;
-import 'package:utils/extensions.dart';
 
 /// Displays a widget and message centered on a page
 class Message extends StatelessWidget {

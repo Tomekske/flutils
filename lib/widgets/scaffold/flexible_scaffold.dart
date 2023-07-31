@@ -1,6 +1,6 @@
+import 'package:flutils/extensions/scaffold_extension.dart';
+import 'package:flutils/extensions/string_extension.dart';
 import 'package:flutter/material.dart';
-import 'package:utils/extensions/scaffold_extension.dart';
-import 'package:utils/extensions/string_extension.dart';
 
 /// This widgets provides a scaffold with a widget that is displayed within the appBar and an onWillScope
 class FlexibleScaffold extends StatefulWidget {

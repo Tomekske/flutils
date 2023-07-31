@@ -1,6 +1,6 @@
+import 'package:flutils/enums.dart';
+import 'package:flutils/widgets/platform_ui/text_box/material_text_box.dart';
 import 'package:flutter/material.dart';
-import 'package:utils/enums.dart';
-import 'package:utils/widgets/platform_ui/text_box/material_text_box.dart';
 
 /// This class shows the bottom sheet content for one single inputBox
 class InputBottomSheet {

@@ -1,4 +1,4 @@
-import 'package:utils/extensions.dart';
+import 'package:flutils/extensions.dart';
 
 extension ListExtension<T> on List<T> {
   /// Print all items of the list

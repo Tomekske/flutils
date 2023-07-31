@@ -8,7 +8,7 @@
 A collection of utility classes that are used in the application.
 
 ```dart
-import 'package:utils/utils.dart';
+import 'package:flutils/utils.dart';
 ```
 
 - [Toast](#toast)

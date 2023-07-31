@@ -1,5 +1,5 @@
+import 'package:flutils/data/enums/input_mode.dart';
 import 'package:flutter/material.dart';
-import 'package:utils/data/enums/input_mode.dart';
 
 class MaterialTextBox extends StatefulWidget {
   /// Property contains a [key]
