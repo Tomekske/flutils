@@ -1,4 +1,8 @@
-## 0.0.42
+## 0.0.44
+- Added: getExtension extension on a file
+- Improved: static methods for materialTheme and textTheme
+
+## 0.0.43
 - Renamed: package utils to flutils
 
 ## 0.0.42

@@ -1,4 +1,4 @@
-import 'package:flutils/app_theme.dart' as AppTheme;
+import 'package:flutils/app_theme.dart';
 import 'package:flutter/material.dart';
 
 /// A toast that looks like a Material toast.
@@ -15,7 +15,7 @@ class MaterialToast {
       SnackBar(
         content: Text(
           message,
-          style: AppTheme.TextTheme.white[19],
+          style: AppTheme.textTheme.white[19],
         ),
         backgroundColor: Theme.of(context).canvasColor,
       ),
@@ -28,7 +28,7 @@ class MaterialToast {
       SnackBar(
         content: Text(
           message,
-          style: AppTheme.TextTheme.white[19],
+          style: AppTheme.textTheme.white[19],
         ),
         backgroundColor: Colors.green,
       ),
@@ -41,7 +41,7 @@ class MaterialToast {
       SnackBar(
         content: Text(
           message,
-          style: AppTheme.TextTheme.white[19],
+          style: AppTheme.textTheme.white[19],
         ),
         backgroundColor: Colors.orange,
       ),
@@ -54,7 +54,7 @@ class MaterialToast {
       SnackBar(
         content: Text(
           message,
-          style: AppTheme.TextTheme.white[19],
+          style: AppTheme.textTheme.white[19],
         ),
         backgroundColor: Colors.red,
       ),

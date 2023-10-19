@@ -26,6 +26,7 @@ analyzer:
     unused_field: warning
     prefer_final_fields: error
     unused_element: warning
+    unnecessary_breaks: error
 
 linter:
   rules:

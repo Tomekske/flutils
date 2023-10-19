@@ -1,4 +1,4 @@
-import 'package:flutils/app_theme.dart' as AppTheme;
+import 'package:flutils/app_theme.dart';
 import 'package:flutter/material.dart';
 
 /// Confirmation dialog class
@@ -42,7 +42,7 @@ class ConfirmationDialog {
               TextButton(
                   child: Text(
                     "Cancel",
-                    style: AppTheme.TextTheme.white[14],
+                    style: AppTheme.textTheme.white[14],
                   ),
                   onPressed: () {
                     Navigator.of(context).pop();
@@ -54,7 +54,7 @@ class ConfirmationDialog {
                 onPressed: confirmationEvent,
                 child: Text(
                   confirmationText,
-                  style: AppTheme.TextTheme.white[14],
+                  style: AppTheme.textTheme.white[14],
                 ),
               ),
             ],

@@ -1,4 +1,4 @@
-import 'package:flutils/app_theme.dart' as AppTheme;
+import 'package:flutils/app_theme.dart';
 import 'package:flutils/extensions.dart';
 import 'package:flutter/material.dart';
 
@@ -27,7 +27,7 @@ class Message extends StatelessWidget {
           padding: const EdgeInsets.fromLTRB(0.0, 8.0, 0.0, 0.0),
           child: Text(
             message,
-            style: style ?? AppTheme.TextTheme.whiteBold[30],
+            style: style ?? AppTheme.textTheme.whiteBold[30],
           ),
         )
       ],

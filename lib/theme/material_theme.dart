@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class MaterialTheme {
-  static ThemeData? dark = ThemeData(
+  ThemeData? dark = ThemeData(
     brightness: Brightness.dark,
     appBarTheme: AppBarTheme(
       backgroundColor: Color(0xFF272727),
@@ -100,9 +100,12 @@ class MaterialTheme {
         fontWeight: FontWeight.w400,
         letterSpacing: 1.5,
       ),
-    ), colorScheme: ColorScheme.dark().copyWith(
-      primary: Colors.red,
-      secondary: Colors.red,
-    ).copyWith(background: Color(0xFF121212)),
+    ),
+    colorScheme: ColorScheme.dark()
+        .copyWith(
+          primary: Colors.red,
+          secondary: Colors.red,
+        )
+        .copyWith(background: Color(0xFF121212)),
   );
 }

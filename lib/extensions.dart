@@ -2,6 +2,7 @@
 library extensions;
 
 export 'extensions/double_extension.dart';
+export 'extensions/file_extension.dart';
 export 'extensions/int_extension.dart';
 export 'extensions/list_extension.dart';
 export 'extensions/string_extension.dart';
