@@ -2,10 +2,6 @@ import 'package:flutils/data/enums/input_mode.dart';
 import 'package:flutter/material.dart';
 
 class MaterialTextBox extends StatefulWidget {
-  /// Property contains a [key]
-  @override
-  Key? key;
-
   /// Property contains the [hint] text of the input box
   final String hint;
 
@@ -30,7 +26,6 @@ class MaterialTextBox extends StatefulWidget {
 
   /// A class that provides platform-specific Material UI input box widget.
   MaterialTextBox({
-    this.key,
     required this.hint,
     required this.controller,
     required this.inputMode,

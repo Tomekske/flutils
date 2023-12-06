@@ -1,3 +1,6 @@
+## 0.0.45
+- Added: format and elapsedTime extensions on the DateTime class
+
 ## 0.0.44
 - Added: getExtension extension on a file
 - Improved: static methods for materialTheme and textTheme

@@ -1,6 +1,6 @@
 name: flutils
 description: This package contains utilities which are commonly used in my private projects
-version: 0.0.44
+version: 0.0.45
 homepage:
 
 environment:
@@ -15,6 +15,8 @@ dependencies:
   fluent_ui: ^4.7.3
   file_picker: ^5.3.3
   path: ^1.8.0
+  intl: ^0.18.0
+  time_machine: ^0.9.17
 
 dev_dependencies:
   flutter_lints: ^2.0.1
