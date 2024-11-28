@@ -4,6 +4,8 @@ import 'package:flutils/data/enums/input_mode.dart';
 import 'package:flutils/data/models/platform_theme.dart';
 import 'package:flutils/widgets/platform_ui/button/fluent_button.dart';
 import 'package:flutils/widgets/platform_ui/button/material_button.dart';
+import 'package:flutils/widgets/platform_ui/icon_button/fluent_icon_button.dart';
+import 'package:flutils/widgets/platform_ui/icon_button/material_icon_button.dart';
 import 'package:flutils/widgets/platform_ui/platform/fluent_platform.dart';
 import 'package:flutils/widgets/platform_ui/platform/material_platform.dart';
 import 'package:flutils/widgets/platform_ui/text_box/fluent_text_box.dart';
@@ -79,6 +81,24 @@ class PlatformUI {
       controller: controller,
       inputMode: inputMode,
       onSubmit: onSubmit,
+    );
+  }
+
+  /// Returns the appropriate platform-specific icon button widget based on the current operating system
+  /// icon: The button's icon.
+  /// onPressed: The button's callback.
+  static Widget iconButton(
+      {required IconData icon, required VoidCallback onPressed}) {
+    if (Platform.isWindows) {
+      return FluentIconButton(
+        icon: icon,
+        onPressed: onPressed,
+      );
+    }
+
+    return MaterialIconButton(
+      icon: icon,
+      onPressed: onPressed,
     );
   }
 }

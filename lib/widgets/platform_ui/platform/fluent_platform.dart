@@ -1,6 +1,3 @@
-// import 'package:assistant/constants/configured_routes.dart';
-// import 'package:assistant/presentation/pages/home_page.dart';
-// import 'package:assistant/presentation/pages/loading_page.dart';
 import 'package:fluent_ui/fluent_ui.dart';
 
 class FluentPlatform extends StatelessWidget {
